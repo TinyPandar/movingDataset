@@ -1,0 +1,6 @@
+image=images/train/sample_000002.png
+center=(140.0, 260.0)
+car_width=86
+car_height=53
+rotation_deg=90
+output_size=128

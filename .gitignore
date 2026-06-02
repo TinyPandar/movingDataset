@@ -2,15 +2,22 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Generated datasets and local experiment outputs.
 dataset/
 dataset_fixed_intersection/
 dataset_network/
 dataset_simple/
 tracking_dataset/
+dataset_dark_intersection/
+dataset_dark_intersection_smoke/
+dataset_dark_intersection_32k_spread/
+dataset_dark_intersection_32k_spread_smoke/
+dataset_*/
 
 .venv/
 venv/
 env/
+.env
 
 .DS_Store
 Thumbs.db

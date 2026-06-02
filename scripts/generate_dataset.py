@@ -625,7 +625,13 @@ def build_sample(
     raise RuntimeError("Failed to build a valid sample after multiple retries.")
 
 
-def validate_annotations(records: list[dict[str, object]], image_size: int, train_count: int, total_count: int) -> None:
+def validate_annotations(
+    records: list[dict[str, object]],
+    image_size: int,
+    train_count: int,
+    total_count: int,
+    allow_out_of_bounds_center: bool = False,
+) -> None:
     if len(records) != total_count:
         raise AssertionError("Annotation count does not match the number of generated images.")
 
@@ -637,7 +643,7 @@ def validate_annotations(records: list[dict[str, object]], image_size: int, trai
     for record in records:
         x = float(record["center_x"])
         y = float(record["center_y"])
-        if not (0 <= x < image_size and 0 <= y < image_size):
+        if not allow_out_of_bounds_center and not (0 <= x < image_size and 0 <= y < image_size):
             raise AssertionError("Found a center point that falls outside the image bounds.")
 
 

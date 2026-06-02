@@ -1,0 +1,18 @@
+{
+  "output": "dataset_dark_intersection_box_mask_smoke",
+  "total_count": 36,
+  "random_count": 24,
+  "sequence_count": 2,
+  "frames_per_sequence": 6,
+  "image_size": 640,
+  "train_ratio": 0.8,
+  "seed": 42,
+  "safety_margin": 28,
+  "debug_preview_count": 4,
+  "car_color": "blue",
+  "car_scale": 0.85,
+  "sampling_mode": "without_replacement",
+  "background_style": "dark_intersection_side_lines_only",
+  "target_types": ["box_mask"],
+  "target_output_size": 128
+}

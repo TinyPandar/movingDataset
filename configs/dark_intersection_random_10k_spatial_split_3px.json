@@ -1,0 +1,17 @@
+{
+  "output": "dataset_dark_intersection_random_10k_spatial_split_3px",
+  "total_count": 10000,
+  "random_count": 10000,
+  "sequence_count": 0,
+  "frames_per_sequence": 20,
+  "image_size": 640,
+  "train_ratio": 0.8,
+  "seed": 42,
+  "safety_margin": 28,
+  "debug_preview_count": 8,
+  "car_color": "blue",
+  "car_scale": 0.85,
+  "sampling_mode": "without_replacement",
+  "split_min_train_distance_px": 3,
+  "background_style": "dark_intersection_side_lines_only"
+}
